@@ -801,11 +801,11 @@ body {
   text-transform: none;
 }
 
-.footer__list .item__content ul {
+.footer__list .item__content div {
   padding-top: 30px;
 }
 
-.footer__list .item__content ul a {
+.footer__list .item__content div a {
   padding: 0px 0px 0px 0px;
 }
 
