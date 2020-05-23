@@ -1,0 +1,271 @@
+@media (max-width: 1340px) {
+  .demo__title-features-2 {
+    right: calc(50vw - 410px);
+  }
+  .demo__title-features-3 {
+    right: calc(50vw - 440px);
+  }
+  .spec__price {
+    font-size: 17vw;
+  }
+  .spec__moto img {
+    width: 100%;
+    max-width: 95vw;
+  }
+  .preview__moto {
+    position: static;
+    float: right;
+    padding-top: 40px;
+  }
+  .preview__moto img {
+    max-width: 95vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .demo__suptitle {
+    padding-left: 20%;
+  }
+  .spec__left {
+    max-width: 500px;
+  }
+  .spec__text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .spec::before {
+    min-height: 100%;
+  }
+  .spec__inner {
+    display: block;
+    padding: 50px 0 380px;
+  }
+  .spec__left {
+    max-width: none;
+    text-align: center;
+  }
+  .spec__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 0;
+  }
+  .spec__text p {
+    padding: 0 50px 25px;
+    text-align: left;
+  }
+  .spec__right {
+    margin-top: 70px;
+    text-align: center;
+  }
+  .spec__price {
+    font-size: 28vw;
+  }
+  .spec__moto {
+    left: 0;
+    right: 0;
+  }
+  .spec__moto img {
+    width: auto;
+  }
+  .footer__menu {
+    margin: 0px -15px;
+  }
+  .footer__list {
+    padding: 25px 35px;
+  }
+  .footer__list:last-child {
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 900px) {
+  .demo {
+    min-height: 100vh;
+  }
+  .demo__wrapper {
+    padding-top: 30vh;
+  }
+  .demo__title-features {
+    display: none;
+  }
+  .features {
+    padding-bottom: 60px;
+  }
+  .features__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .features__content {
+    padding: 30px 0;
+  }
+  .features__content-text::after {
+    bottom: -60px;
+  }
+  .features__moto {
+    padding-top: 30px;
+    margin: 40px 0;
+  }
+  .features__moto::before {
+    min-height: 100%;
+  }
+  .preview__moto-btn {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .spec__circles-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .spec__circles-item + .spec__circles-item {
+    padding: 40px 0 0;
+  }
+  .preview__moto-btn {
+    right: 10vw;
+    top: 5vw;
+  }
+  .footer__list {
+    padding: 25px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 130px;
+  }
+  .footer__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__social {
+    margin: 0px 0px 0px 10px;
+  }
+  .footer__menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0px 0px;
+    padding: 15px 0 0px;
+  }
+  .footer__list {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    text-align: center;
+  }
+  .footer__list:last-child {
+    margin: 0px 0px 0px 0px;
+  }
+  .footer__copy {
+    float: none;
+    text-align: center;
+  }
+}
+
+@media (max-width: 740px) {
+  .demo__title {
+    font-size: 18vw;
+    padding-right: 0;
+  }
+  .demo__suptitle {
+    padding-left: 10%;
+  }
+  .demo__title-img img {
+    max-width: 93vw;
+  }
+  .spec__text {
+    display: block;
+  }
+  .spec__text p {
+    text-align: center;
+  }
+  .spec__price {
+    font-size: 24vw;
+  }
+  .spec__moto img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .demo__title {
+    font-size: 17vw;
+  }
+  .demo__title-img {
+    top: -18px;
+  }
+  .spec__text {
+    font-size: 16px;
+  }
+  .spec__inner {
+    padding-bottom: 220px;
+  }
+  .preview__moto-btn {
+    padding: 14px;
+  }
+  .footer {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 460px) {
+  .demo__title-img img {
+    max-width: 90vw;
+  }
+  .spec__title {
+    font-size: 13vw;
+  }
+  .spec__text p {
+    padding: 0 0 25px;
+  }
+  .features__moto img {
+    max-width: 90vw;
+  }
+  .preview__title {
+    font-size: 13vw;
+  }
+  .preview__text {
+    font-size: 20px;
+  }
+  .preview__newsletter {
+    margin-left: 68px;
+  }
+  .preview__newsletter::before {
+    width: 344px;
+  }
+  .footer__btn {
+    position: absolute;
+    right: 0;
+    left: auto;
+  }
+  .footer__list {
+    text-align: left;
+  }
+  .item {
+    padding: 15px 0 0 0;
+  }
+  .item__title {
+    padding: 0px 0px 0px 25px;
+    font-size: 14px;
+  }
+  .item__title:before, .item__title:after {
+    display: block;
+  }
+  .item__content {
+    padding: 0px 0px 0px 25px;
+    display: none;
+  }
+}
