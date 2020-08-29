@@ -1,4 +1,4 @@
-$(function () {
+function circles() {
 
 
     var myCircle = Circles.create({
@@ -7,7 +7,7 @@ $(function () {
         value: 80,
         maxValue: 100,
         width: 10,
-        text: $('#circles-1 + .spec__circles-title').html(),
+        text: $('#circles-1 + .circles__title').html(),
         colors: ['#2e2e2e', '#fcb404'],
         duration: 400,
         wrpClass: 'circles-wrp',
@@ -23,7 +23,7 @@ $(function () {
         value: 80,
         maxValue: 100,
         width: 10,
-        text: $('#circles-2 + .spec__circles-title').html(),
+        text: $('#circles-2 + .circles__title').html(),
         colors: ['#2e2e2e', '#fcb404'],
         duration: 400,
         wrpClass: 'circles-wrp',
@@ -40,7 +40,7 @@ $(function () {
         value: 80,
         maxValue: 100,
         width: 10,
-        text: $('#circles-3 + .spec__circles-title').html(),
+        text: $('#circles-3 + .circles__title').html(),
         colors: ['#2e2e2e', '#fcb404'],
         duration: 400,
         wrpClass: 'circles-wrp',
@@ -54,7 +54,7 @@ $(function () {
 
 
 
-});
+};
 $(document).ready(function () {
 
     $(".spec__left").addClass("hidden").viewportChecker({
@@ -71,9 +71,12 @@ $(document).ready(function () {
         offset: 200
     });
 
-    $(".spec__circles-inner").addClass("hidden").viewportChecker({
+    $(".spec__circles").addClass("hidden").viewportChecker({
         classToAdd: 'visible animated fadeInUp faster',
-        offset: 100
+        offset: 200,
+        callbackFunction: function (elem, action) {
+            circles();
+        }
     });
 
     $(".features__perfomance").addClass("hidden").viewportChecker({
@@ -141,7 +144,7 @@ $(document).ready(function () {
     });
 
 
-    
+
 
 
 });
@@ -150,7 +153,7 @@ $(document).ready(function () {
     $(window).resize(function (event) {
         $(".item__content").css("display", "none");
         sizeCheck();
-        
+
     });
 
     function spoller() {
@@ -162,7 +165,7 @@ $(document).ready(function () {
     }
 
     function sizeCheck() {
-        var w = $(window).width();        
+        var w = $(window).width();
         if (w < 460) {
             $(".item__title").off();
             spoller();
@@ -173,5 +176,21 @@ $(document).ready(function () {
 
     }
     sizeCheck();
-})
+});
 
+$(".demo__features-item").click(function (event) {
+
+    if (!$(this).hasClass('active')) {
+        $.each($(this).closest('.demo__features').find('.demo__features-item'), function (index, val) {
+            $(this).removeClass('active');
+            
+        });
+    }
+    
+        $(this).toggleClass('active');
+    
+        
+    
+    
+
+});
